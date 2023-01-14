@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./Navbar";
+import { useState } from "react";
+import poems from './poems'
+
+function getRandomPoem() {
+  return poems[Math.floor(Math.random() * poems.length)]
+}
 
 function App() {
+  const [poem, setPoem] = useState(getRandomPoem())
+
   return (
     <div className="App">
+      <Navbar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Electric Nobody</h1>
       </header>
+      <main>
+        <pre>{poem}</pre>
+        {/* <Poem /> */}
+      </main>
+      <footer>
+        <button onClick={() => setPoem(getRandomPoem())}>
+          Get another poem
+        </button>
+      </footer>
     </div>
   );
 }
