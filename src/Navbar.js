@@ -19,7 +19,7 @@ function Navbar() {
                 <a className="nav-link" href='/#/acknowledgement'>Acknowledgement</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href='https://troubledepartment.com/?product=bodyelectronic-poems-by-aerik-francis-paperback-preorder' target="_blank" rel="noreferrer">Buy the E-Book</a>
+                <a className="nav-link" href='https://troubledepartment.com/?product=bodyelectronic-poems-by-aerik-francis-paperback-preorder' target="_blank" rel="noreferrer">Buy the Book</a>
               </li>
             </ul>
           </div>
