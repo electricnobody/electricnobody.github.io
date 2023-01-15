@@ -20,7 +20,7 @@ function About() {
         Aerik Francis is a Queer Black & Latinx poet & teaching artist based in Denver, Colorado, USA. Francis is the author of the chapbook BODYELECTRONIC (Trouble Department 2022), as well as author of the forthcoming poetry chapbook MISEDUCATION, winner of the 2022 New Delta Review Chapbook Prize. Their poetry-music EP titled SYZYGY is available on bandcamp. Francis has poetry published widely, links of which may be found at <a href="https://linktr.ee/aerik" target="_blank" rel="noreferrer">linktr.ee/aerik</a> as well as their website <a href="https://www.phaentompoet.com/" target="_blank" rel="noreferrer">phaentompoet.com</a> . Find them on IG/TW/youtube/soundcloud @phaentompoet
       </p>
       <p>
-        Hào AJ Tran is a gothic programmer.
+        Hào AJ Tran is a gothic programmer. You can connect with them on <a href="https://www.linkedin.com/in/ajtran-dev/" target="_blank" rel="noreferrer">LinkedIn</a>.
       </p>
     </>
   )
