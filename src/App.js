@@ -3,11 +3,13 @@ import { useState } from "react";
 import poems from './poems'
 
 function getRandomPoem() {
-  return poems[Math.floor(Math.random() * poems.length)]
+  const titles = Object.keys(poems);
+  const title = titles[Math.floor(Math.random() * titles.length)]
+  return [title, poems[title]]
 }
 
 function App() {
-  const [poem, setPoem] = useState(getRandomPoem())
+  const [[title, poem], setPoem] = useState(getRandomPoem())
 
   return (
     <div className="App">
@@ -16,8 +18,8 @@ function App() {
         <h1>Electric Nobody</h1>
       </header>
       <main>
+        <h2>{title}</h2>
         <pre>{poem}</pre>
-        {/* <Poem /> */}
       </main>
       <footer>
         <button onClick={() => setPoem(getRandomPoem())}>
