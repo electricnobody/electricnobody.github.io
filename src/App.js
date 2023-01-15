@@ -1,6 +1,6 @@
-import Navbar from "./Navbar";
-import { useState } from "react";
+import Poem from "./Poem";
 import poems from './poems'
+import { useState } from "react";
 
 function getRandomPoem() {
   const titles = Object.keys(poems);
@@ -12,20 +12,15 @@ function App() {
   const [[title, poem], setPoem] = useState(getRandomPoem())
 
   return (
-    <div className="App">
-      <Navbar />
-      <header className="App-header">
-        <h1>Electric Nobody</h1>
-      </header>
+    <div>
       <main>
-        <h2>{title.replace(/_/g, "")}</h2>
-        <pre>{poem}</pre>
+        <Poem title={title} poem={poem} />
+        <div className="row">
+          <button className="btn btn-primary" onClick={() => setPoem(getRandomPoem())}>
+            Get another poem
+          </button>
+        </div>
       </main>
-      <footer>
-        <button onClick={() => setPoem(getRandomPoem())}>
-          Get another poem
-        </button>
-      </footer>
     </div>
   );
 }
