@@ -8,15 +8,25 @@ function getRandomPoem() {
   return [title, poems[title]]
 }
 
+function scrollToTop() {
+  document.body.scrollTop = 0; document.documentElement.scrollTop = 0;
+}
+
+
 function App() {
   const [[title, poem], setPoem] = useState(getRandomPoem())
+
+  function handleButtonClick() {
+    setPoem(getRandomPoem())
+    scrollToTop()
+  }
 
   return (
     <div>
       <main>
         <Poem title={title} poem={poem} />
         <div className="row">
-          <button className="btn btn-primary" onClick={() => setPoem(getRandomPoem())}>
+          <button className="btn btn-primary" onClick={handleButtonClick}>
             Get another poem
           </button>
         </div>
