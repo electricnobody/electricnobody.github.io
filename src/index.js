@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import About from './About';
 import App from './App';
 import Acknowledgement from './Acknowledgement';
 import Navbar from './Navbar';
 import Preface from './Preface';
-import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 
@@ -22,6 +22,10 @@ const router = createHashRouter([
   {
     path: '/acknowledgement',
     element: <Acknowledgement />
+  },
+  {
+    path: '/about',
+    element: <About />
   }
 ])
 
