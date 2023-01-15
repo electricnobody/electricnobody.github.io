@@ -18,7 +18,7 @@ function App() {
         <h1>Electric Nobody</h1>
       </header>
       <main>
-        <h2>{title}</h2>
+        <h2>{title.replace(/_/g, "")}</h2>
         <pre>{poem}</pre>
       </main>
       <footer>
